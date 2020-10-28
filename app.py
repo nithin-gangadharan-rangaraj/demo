@@ -17,10 +17,19 @@ def format_text(paragraph: str, start_idx: int, end_idx: int) -> str:
     return paragraph[:start_idx] + "**" + paragraph[start_idx:end_idx] + "**" + paragraph[end_idx:]
 
 if __name__ == "__main__":
+    
+    st.title("PSG COLLEGE OF TECHNOLOGY - FINAL YEAR PROJECT")
+    
+    html_temp = """
+    <div style="background-color:#084C46 ;padding:20px">
+    <h1 style="color:white;text-align:center;"> Question Answering Prediction </h2>
+    </div>
+    """
+    st.markdown(html_temp, unsafe_allow_html=True)
     passage = st.text_input("PASSAGE", "")
     question = st.text_input("QUESTION", "")
 
-    if question != "":
+    if st.button("Get Answer"):
       pipeline = get_qa_pipeline()
       #st.write(pipeline.model)
       #st.write(pipeline.model.config)
