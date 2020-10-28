@@ -21,7 +21,7 @@ if __name__ == "__main__":
     st.title("PSG COLLEGE OF TECHNOLOGY - FINAL YEAR PROJECT")
     
     html_temp = """
-    <div style="background-color:#084C46 ;padding:20px">
+    <div style="background-color:#084C46 ;">
     <h1 style="color:white;text-align:center;"> Question Answering Prediction </h2>
     </div>
     """
