@@ -18,14 +18,9 @@ def format_text(paragraph: str, start_idx: int, end_idx: int) -> str:
 
 if __name__ == "__main__":
     
-    html_temp = """
-    <div style="background-color:#084C46 ;">
-    <h3 style="color:white;text-align:center;"> PSG College of Technology - Final Year Project </h3>
-    </div>
-    """
-    
+       
     st.title("QUESTION ANSWERING")
-    
+    st.text("PSG College of Technology - Final Year Project")
     
     st.markdown(html_temp, unsafe_allow_html=True)
     passage = st.text_input("PASSAGE", "")
