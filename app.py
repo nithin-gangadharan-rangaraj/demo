@@ -2,7 +2,6 @@ from transformers import Pipeline
 from transformers import pipeline
 import streamlit as st
 
-@st.cache
 def get_qa_pipeline() -> Pipeline:
     qa = pipeline("question-answering")
     return qa
