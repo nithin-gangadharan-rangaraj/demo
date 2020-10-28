@@ -22,7 +22,6 @@ if __name__ == "__main__":
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Final Year Project")
     
-    st.markdown(html_temp, unsafe_allow_html=True)
     passage = st.text_input("PASSAGE", "")
     question = st.text_input("QUESTION", "")
 
