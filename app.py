@@ -22,7 +22,7 @@ if __name__ == "__main__":
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Project Work I")
     
-    passage = st.text_input("PASSAGE", "", type="multiline")
+    passage = st.text_area("PASSAGE", "")
     question = st.text_input("QUESTION", "")
 
     if st.button("Get Answer"):
