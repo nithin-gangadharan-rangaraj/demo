@@ -1,12 +1,9 @@
 from transformers import Pipeline
 from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import streamlit as st
 
 def get_qa_pipeline() -> Pipeline:
-    tokenizer = AutoTokenizer.from_pretrained("twmkn9/distilbert-base-uncased-squad2")
-    model = AutoModelForQuestionAnswering.from_pretrained("twmkn9/distilbert-base-uncased-squad2")
-    qa = pipeline("question-answering", model = model, tokenizer=tokenizer)
+    qa = pipeline("question-answering")
     return qa
 
 def answer_question(pipeline: Pipeline, question: str, paragraph: str) -> dict:
