@@ -1,9 +1,12 @@
 from transformers import Pipeline
 from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import streamlit as st
 
 def get_qa_pipeline() -> Pipeline:
-    qa = pipeline("question-answering")
+    tokenizer = AutoTokenizer.from_pretrained("twmkn9/bert-base-uncased-squad2")
+    model = AutoModelForQuestionAnswering.from_pretrained("twmkn9/bert-base-uncased-squad2")
+    qa = pipeline("question-answering", model = model, tokenizer=tokenizer)
     return qa
 
 def answer_question(pipeline: Pipeline, question: str, paragraph: str) -> dict:
@@ -35,4 +38,4 @@ if __name__ == "__main__":
         #end_idx = answer["end"]
         st.write("Prediction:", answer["answer"])
       except:
-        st.write("You must provide a valid passage")
+        st.write("Prediction error!")
