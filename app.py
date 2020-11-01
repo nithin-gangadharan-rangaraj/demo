@@ -34,5 +34,11 @@ if __name__ == "__main__":
         #start_idx = answer["start"]
         #end_idx = answer["end"]
         st.write("Prediction:", answer["answer"])
+        with st.beta_expander("See prediction details"):
+          a=answer["score"]
+          b = round(a,3)
+          st.write("Confidence:",b*100,"%")
+          st.write("Start index:",answer["start"])
+          st.write("End index:", answer["end"])
       except:
         st.write("Prediction error!")
