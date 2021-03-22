@@ -20,6 +20,10 @@ if __name__ == "__main__":
     
     hide_streamlit_style = """
             <style>
+            body {
+            background-image: url("https://i.pinimg.com/originals/a0/7e/8f/a07e8f05a7d516ba7fd90519c5126058.jpg");
+            background-size: cover;
+            }
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
