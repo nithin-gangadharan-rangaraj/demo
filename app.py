@@ -26,8 +26,7 @@ if __name__ == "__main__":
 		}
 		</style>
 		""", unsafe_allow_html=True) 
-	st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-       
+     
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Project Work I")
     
