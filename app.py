@@ -21,7 +21,6 @@ if __name__ == "__main__":
     st.markdown(
 		"""
 		<style>
-		.reportview-container {
 		<div class="waveWrapper waveAnimation">
   <div class="waveWrapperInner bgTop">
     <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
@@ -33,7 +32,6 @@ if __name__ == "__main__":
     <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
   </div>
 </div>
-		}
 		</style>
 		""", unsafe_allow_html=True) 
     
