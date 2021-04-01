@@ -18,15 +18,15 @@ def format_text(paragraph: str, start_idx: int, end_idx: int) -> str:
 
 if __name__ == "__main__":
     
-    hide_streamlit_style = """
-            <style>
-            background-image: url("https://i.pinimg.com/originals/a0/7e/8f/a07e8f05a7d516ba7fd90519c5126058.jpg");
-            background-size: cover;
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+    st.markdown(
+		"""
+		<style>
+		.reportview-container {
+		background: url("https://i.pinimg.com/originals/a5/91/17/a59117a046cbc0082afe2ce27622c0c4.jpg")
+		}
+		</style>
+		""", unsafe_allow_html=True) 
+	st.markdown(hide_streamlit_style, unsafe_allow_html=True)
        
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Project Work I")
