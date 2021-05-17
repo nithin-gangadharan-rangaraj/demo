@@ -1,6 +1,7 @@
 from transformers import Pipeline
 from transformers import pipeline
 import streamlit as st
+import streamlit-theme as stt
 
 def get_qa_pipeline() -> Pipeline:
     qa = pipeline("question-answering")
@@ -107,7 +108,7 @@ if __name__ == "__main__":
      
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Project Work I")
-    
+    stt.set_theme({'primary': '#1b3388'})
     passage = st.text_area("PASSAGE", "")
     question = st.text_input("QUESTION", "")
 
