@@ -1,7 +1,7 @@
 from transformers import Pipeline
 from transformers import pipeline
 import streamlit as st
-import streamlit-theme as stt
+import streamlit_theme as stt
 
 def get_qa_pipeline() -> Pipeline:
     qa = pipeline("question-answering")
