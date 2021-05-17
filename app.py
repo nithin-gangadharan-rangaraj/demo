@@ -22,7 +22,7 @@ if __name__ == "__main__":
        
     st.title("QUESTION ANSWERING")
     st.text("PSG College of Technology - Project Work I")
-    stt.set_theme({'primary': '#000000'})
+    stt.set_theme({'primary': '#1b033f'})
     passage = st.text_area("PASSAGE", "")
     question = st.text_input("QUESTION", "")
 
